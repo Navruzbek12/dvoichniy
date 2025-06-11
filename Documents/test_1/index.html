@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Двоичный конвертер</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/css-doodle@0.34.1/css-doodle.min.js"></script>
+</head>
+<body>
+ 
+    <div class="container">
+        <h1>Двоичный конвертер</h1>
+        <div class="game-box">
+            <p>Преобразуйте число <span id="decimalNumber">0</span> в двоичную систему:</p>
+            <div class="binary-input-container" id="binaryContainer">
+                <!-- Будет заполнено JavaScript -->
+            </div>
+            <button id="checkBtn" class="check-btn">Проверить</button>
+            <p>Очки: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div class="scanline"></div>
+<div class="glitch-overlay"></div>
+
+<style>
+.glitch-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.5;
+}
+</style>
+<css-doodle>
+    <css-doodle>
+
+</body>
+</html>
