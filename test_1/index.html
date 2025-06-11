@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinarTJ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/css-doodle@0.34.1/css-doodle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="rules-box">
+      <h2>Правила игры:</h2>
+    <ol>
+        <li>Компьютер генерирует случайное число от 0 до 1000.</li>
+        <li>Ваша задача - преобразовать это число в двоичную систему счисления.</li>
+        <li>Используйте стрелки вверх/вниз в каждом сегменте для ввода 0 или 1.</li>
+        <li>За каждый правильный ответ вы получаете 1 очко.</li>
+        <li>При неправильном ответе вы можете попробовать снова.</li>
+    </ol>
+</div>
+    <div class="container">
+        <h1>Двоичный конвертер</h1>
+        <div class="game-box">
+            <p>Преобразуйте число <span id="decimalNumber">0</span> в двоичную систему:</p>
+            <div class="binary-input-container" id="binaryContainer">
+                
+            </div>
+            <button id="checkBtn" class="check-btn">Проверить</button>
+            <p>Очки: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div class="scanline"></div>
+<div class="glitch-overlay"></div>
+
+<style>
+.glitch-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.5;
+}
+</style>
+<css-doodle>
+    <css-doodle>
+
+</body>
+</html>
